@@ -42,13 +42,14 @@ export default function Teaching() {
           <div className="text-xs uppercase tracking-wide text-slate-400 mb-2">University of São Paulo · AUCANI · 2023–2024</div>
           <h3 className="text-base font-semibold text-slate-900 mb-2">English as a Medium of Instruction Program</h3>
           <p className="text-sm text-slate-600 leading-relaxed">
-            Designed and led a comprehensive English as a Medium of Instruction (EMI) program
-            through AUCANI (USP&apos;s international cooperation agency) to support the university&apos;s
-            internationalization effort. Created and instructed an online EMI course — offered
-            synchronously and asynchronously — for over 100 faculty members transitioning their
-            courses from Portuguese to English. Also led in-person EMI conferences and workshops
-            for over 50 professors across the university, in partnership with the US Department
-            of State English Language Fellows program.
+            As part of USP&apos;s push to internationalize its curriculum, I built and ran an
+            English as a Medium of Instruction program through AUCANI, the university&apos;s
+            international cooperation agency. The work had two main pieces: an online course
+            for over 100 faculty members who were shifting their classes from Portuguese to
+            English, and a series of in-person conferences and workshops for more than 50
+            professors across departments. Both strands were developed in partnership with the
+            US Department of State English Language Fellows program, which placed me at USP
+            as a visiting scholar.
           </p>
         </div>
 
