@@ -1,10 +1,21 @@
 export default function Home() {
   return (
     <div className="max-w-2xl">
-      <h1 className="text-3xl font-semibold text-slate-900 mb-2">Trevor Kann</h1>
-      <p className="text-slate-500 mb-8 text-sm uppercase tracking-wide">
-        PhD, Applied Linguistics &nbsp;&middot;&nbsp; Energy Researcher
-      </p>
+      <div className="mb-10">
+        <h1
+          className="text-5xl font-semibold text-slate-900 mb-3 leading-tight"
+          style={{ fontFamily: "var(--font-lora)" }}
+        >
+          Trevor Kann
+        </h1>
+        <div className="flex items-center gap-3 text-sm text-slate-500">
+          <span>PhD, Applied Linguistics</span>
+          <span className="text-slate-300">|</span>
+          <span>Energy Researcher</span>
+          <span className="text-slate-300">|</span>
+          <span>UCLA</span>
+        </div>
+      </div>
 
       <div className="prose">
         <p>
@@ -16,7 +27,6 @@ export default function Home() {
           In recent years I&apos;ve shifted into energy policy and planning research at{" "}
           <a
             href="https://www.evolved.energy"
-            className="text-blue-600 hover:text-blue-800 underline"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -30,18 +40,25 @@ export default function Home() {
           working in Brazil, Mexico, Central America, and Korea. Language — how it works, how it
           fails, and what it reveals about the humans using it — remains a central preoccupation.
         </p>
+      </div>
 
-        <div className="mt-8 flex gap-6 text-sm flex-wrap">
-          <a href="/about" className="text-blue-600 hover:text-blue-800 underline">
-            Background →
+      <div className="mt-10 pt-8 border-t border-slate-200 grid grid-cols-3 gap-4 text-sm">
+        {[
+          { href: "/about", label: "About", sub: "Background & education" },
+          { href: "/research", label: "Research", sub: "Papers & talks" },
+          { href: "/work", label: "Energy Work", sub: "Evolved Energy Research" },
+        ].map(({ href, label, sub }) => (
+          <a
+            key={href}
+            href={href}
+            className="group block p-4 bg-white rounded-lg border border-slate-200 hover:border-slate-400 transition-colors"
+          >
+            <div className="font-medium text-slate-900 group-hover:text-blue-700 transition-colors mb-1">
+              {label}
+            </div>
+            <div className="text-slate-400 text-xs">{sub}</div>
           </a>
-          <a href="/research" className="text-blue-600 hover:text-blue-800 underline">
-            Research →
-          </a>
-          <a href="/work" className="text-blue-600 hover:text-blue-800 underline">
-            Energy Work →
-          </a>
-        </div>
+        ))}
       </div>
     </div>
   );
