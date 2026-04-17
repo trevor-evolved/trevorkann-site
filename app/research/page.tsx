@@ -1,7 +1,12 @@
 export default function Research() {
   return (
     <div className="max-w-2xl">
-      <h1 className="text-2xl font-semibold text-slate-900 mb-8">Research</h1>
+      <h1
+        className="text-2xl font-semibold text-slate-900 mb-8"
+        style={{ fontFamily: "var(--font-lora)" }}
+      >
+        Research
+      </h1>
 
       <div className="prose">
         <p>
@@ -12,45 +17,39 @@ export default function Research() {
         </p>
 
         <h2>Publications</h2>
-
-        <h3>Psycholinguistics</h3>
         <ul>
           <li>
-            Kann, T., Cohen, M.S., Gülser, M., Goldknopf, E., Berman, S., Erlikhman, G., &amp;
-            Zaidel, E. &ldquo;Linguistic Empathy: Behavioral Measures, Neurophysiological
-            Correlates, and Correlation.&rdquo; <em>(manuscript in preparation)</em>
+            Kann T, Berman S, Cohen MS, Goldknopf E, Gülser M, Erlikhman G, Trinh K,
+            Yokoyama OT, Zaidel E (2023). &ldquo;Linguistic Empathy: Behavioral measures,
+            neurophysiological correlates, and correlation with Psychological Empathy.&rdquo;{" "}
+            <em>Neuropsychologia</em>. 15;191:108650.
           </li>
         </ul>
 
-        <h3>Dissertation (2017)</h3>
+        <h2>Dissertation &amp; Theses</h2>
         <ul>
           <li>
-            <em>
-              Measuring Linguistic Empathy: An Experimental Approach to Connecting Linguistic
-              and Social Psychological Notions of Empathy
-            </em>
+            <strong>PhD Dissertation (UCLA)</strong> — <em>Measuring Linguistic Empathy: An
+            Experimental Approach to Connecting Linguistic and Social Psychological Notions
+            of Empathy</em>
           </li>
-        </ul>
-
-        <h3>Educational Research (2015)</h3>
-        <ul>
           <li>
-            <em>
-              Seeking Natural Interaction: A Comparison of Emergent Language within
-              Developmental Therapies for Children with Autism
-            </em>
+            <strong>C.Phil Qualifying Paper (UCLA)</strong> — <em>Seeking Natural Interaction:
+            A Comparison of Emergent Language within Developmental Therapies for Children
+            with Autism</em>
           </li>
-        </ul>
-
-        <h3>Master&apos;s Thesis (2010)</h3>
-        <ul>
           <li>
-            <em>The Prosodical Son: Music&apos;s Influence on the Evolution of Language</em>
+            <strong>MA Thesis (UCLA)</strong> — <em>The Prosodical Son: Music&apos;s Influence
+            on the Evolution of Language</em>
           </li>
         </ul>
 
         <h2>Presentations &amp; Talks</h2>
         <ul>
+          <li>
+            2023–2024 &mdash; Multiple keynote speeches and English teaching seminars, US
+            Department of State / University of São Paulo.
+          </li>
           <li>
             2019 &mdash; &ldquo;Humor as Defensive and Offensive: Manipulating linguistic
             perspective in political and social media exchanges.&rdquo; Center for Medieval and

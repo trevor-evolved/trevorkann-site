@@ -8,10 +8,10 @@ export default function Home() {
         >
           Trevor Kann
         </h1>
-        <div className="flex items-center gap-3 text-sm text-slate-500">
+        <div className="flex items-center gap-3 text-sm text-slate-500 flex-wrap">
           <span>PhD, Applied Linguistics</span>
           <span className="text-slate-300">|</span>
-          <span>Energy Researcher</span>
+          <span>Director of Education, Evolved Energy Research</span>
           <span className="text-slate-300">|</span>
           <span>UCLA</span>
         </div>
@@ -19,26 +19,24 @@ export default function Home() {
 
       <div className="prose">
         <p>
-          I&apos;m a linguist and researcher based in the US. My academic work centers on linguistic
-          empathy — the intersection of language, social psychology, and neuroscience — with
-          broader interests in prosody, language evolution, humor, and pragmatics.
+          I&apos;m an applied linguist with over 20 years of experience teaching and researching
+          language and social science. My academic work centers on linguistic empathy — the
+          intersection of language, social psychology, and neuroscience — with broader interests
+          in prosody, language evolution, humor, and pragmatics.
         </p>
         <p>
-          In recent years I&apos;ve shifted into energy policy and planning research at{" "}
-          <a
-            href="https://www.evolved.energy"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          I currently serve as Director of Education at{" "}
+          <a href="https://www.evolved.energy" target="_blank" rel="noopener noreferrer">
             Evolved Energy Research
           </a>
-          , where I work on data-driven analysis of energy systems and the communication of
-          complex technical findings to broad audiences.
+          , leading internal training, curriculum development, and external communications
+          including newsletters, technical reports, and press coverage.
         </p>
         <p>
-          I taught for many years at UCLA and Santa Monica College, and spent time living and
-          working in Brazil, Mexico, Central America, and Korea. Language — how it works, how it
-          fails, and what it reveals about the humans using it — remains a central preoccupation.
+          Before joining EER, I was a US Department of State English Language Fellow and Visiting
+          Professor at the University of São Paulo, and a full-time Lecturer at UCLA. Language —
+          how it works, how it fails, and what it reveals about the humans using it — remains a
+          central preoccupation.
         </p>
       </div>
 

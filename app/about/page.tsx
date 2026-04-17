@@ -1,62 +1,68 @@
 export default function About() {
   return (
     <div className="max-w-2xl">
-      <h1 className="text-2xl font-semibold text-slate-900 mb-8">About</h1>
+      <h1
+        className="text-2xl font-semibold text-slate-900 mb-8"
+        style={{ fontFamily: "var(--font-lora)" }}
+      >
+        About
+      </h1>
 
       <div className="prose">
         <h2>Education</h2>
         <ul>
           <li>
-            <strong>PhD, Applied Linguistics</strong> — UCLA, 2017
-            <br />
-            Dissertation: <em>Measuring Linguistic Empathy: An Experimental Approach to
-            Connecting Linguistic and Social Psychological Notions of Empathy</em>
-            <br />
-            Advisor: Distinguished Professor Olga T. Yokoyama
+            <strong>PhD, Applied Linguistics</strong> — UCLA<br />
+            <em>Measuring Linguistic Empathy: An Experimental Approach to Connecting Linguistic
+            and Social Psychological Notions of Empathy</em>
           </li>
           <li>
-            <strong>MA, Applied Linguistics</strong> — 2010
-            <br />
-            Thesis: <em>The Prosodical Son: Music&apos;s Influence on the Evolution of Language</em>
+            <strong>C.Phil, Applied Linguistics</strong> — UCLA<br />
+            <em>Seeking Natural Interaction: A Comparison of Emergent Language within
+            Developmental Therapies for Children with Autism</em>
           </li>
           <li>
-            <strong>BA, Linguistics</strong> (minor: Portuguese) — 2004
+            <strong>MA, Applied Linguistics &amp; TESL</strong> — UCLA<br />
+            <em>The Prosodical Son: Music&apos;s Influence on the Evolution of Language</em>
+          </li>
+          <li>
+            <strong>BA, Linguistics</strong> (minor: Portuguese)
           </li>
         </ul>
 
-        <h2>Background</h2>
-        <p>
-          After my undergraduate degree I spent several years as an educator — teaching Spanish
-          and English at the high school level, tutoring privately, and living in Korea for six
-          months teaching English. I then returned to graduate school to pursue research in
-          applied linguistics at UCLA.
-        </p>
-        <p>
-          My dissertation work brought together linguistics, social psychology, and
-          neuroscience, exploring how empathy manifests in language behavior and how it can be
-          measured experimentally. That interdisciplinary thread — connecting rigorous methods
-          to humanistic questions — has carried into my subsequent work in energy research.
-        </p>
-        <p>
-          I have lived and studied extensively in Brazil, Mexico, and Central America, and
-          incorporate Spanish and Portuguese into both research and everyday life.
-        </p>
-
-        <h2>Current work</h2>
-        <p>
-          I work at{" "}
-          <a
-            href="https://www.evolved.energy"
-            className="text-blue-600 hover:text-blue-800 underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Evolved Energy Research
-          </a>
-          , a clean energy consulting and research firm. My focus there involves communicating
-          complex energy modeling findings to policymakers, utilities, and the public — work
-          that draws directly on a background in language and meaning-making.
-        </p>
+        <h2>Experience</h2>
+        <ul>
+          <li>
+            <strong>Director of Education</strong> — Evolved Energy Research, 2024–Present<br />
+            Leading internal training and curriculum development alongside external communications:
+            newsletters, technical reports, blog posts, and press coverage in clean energy planning.
+          </li>
+          <li>
+            <strong>English Language Fellow</strong> — US Department of State, 2023–2024<br />
+            Represented the United States as a visiting scholar and English language expert at the
+            University of São Paulo. Delivered keynote speeches, trained teachers, and expanded
+            access to equitable English language education across Brazil.
+          </li>
+          <li>
+            <strong>Visiting Professor</strong> — University of São Paulo, 2023–2024<br />
+            Taught Linguistics, Applied Linguistics, and English at the top university in Latin
+            America. Led English as a Medium of Instruction (EMI) conferences and workshops for
+            over 50 professors; designed and instructed an online EMI course for over 100 faculty
+            transitioning courses from Portuguese to English.
+          </li>
+          <li>
+            <strong>Lecturer</strong> — UCLA, 2017–2020<br />
+            Full-time lecturer of Applied Linguistics, Linguistics, and ESL. Oversaw courses of
+            up to 88 students and managed up to four TAs per course.
+          </li>
+          <li>
+            <strong>Teaching Associate, TA &amp; Instructor</strong> — UCLA, 2009–2015
+          </li>
+          <li>
+            <strong>Adjunct Professor</strong> — Santa Monica College, 2012–2013<br />
+            ESL department.
+          </li>
+        </ul>
 
         <h2>Languages</h2>
         <ul>
