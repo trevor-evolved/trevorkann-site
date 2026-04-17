@@ -1,19 +1,33 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="max-w-2xl">
-      <div className="mb-10">
-        <h1
-          className="text-5xl font-semibold text-slate-900 mb-3 leading-tight"
-          style={{ fontFamily: "var(--font-lora)" }}
-        >
-          Trevor Kann
-        </h1>
-        <div className="flex items-center gap-3 text-sm text-slate-500 flex-wrap">
-          <span>PhD, Applied Linguistics</span>
-          <span className="text-slate-300">|</span>
-          <span>Director of Education, Evolved Energy Research</span>
-          <span className="text-slate-300">|</span>
-          <span>UCLA</span>
+      <div className="mb-10 flex items-start gap-8">
+        <div className="flex-1">
+          <h1
+            className="text-5xl font-semibold text-slate-900 mb-3 leading-tight"
+            style={{ fontFamily: "var(--font-lora)" }}
+          >
+            Trevor Kann
+          </h1>
+          <div className="flex items-center gap-3 text-sm text-slate-500 flex-wrap">
+            <span>PhD, Applied Linguistics</span>
+            <span className="text-slate-300">|</span>
+            <span>Director of Education, Evolved Energy Research</span>
+            <span className="text-slate-300">|</span>
+            <span>UCLA</span>
+          </div>
+        </div>
+        <div className="flex-shrink-0">
+          <Image
+            src="/photo-punt.jpg"
+            alt="Trevor Kann"
+            width={140}
+            height={160}
+            className="rounded-lg object-cover shadow-sm"
+            style={{ objectPosition: "center top" }}
+          />
         </div>
       </div>
 

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Research() {
   return (
     <div className="max-w-2xl">
@@ -7,6 +9,20 @@ export default function Research() {
       >
         Research
       </h1>
+
+      <div className="mb-8 flex gap-6 items-start">
+        <Image
+          src="/photo-eeg.jpg"
+          alt="Trevor Kann in EEG lab"
+          width={160}
+          height={160}
+          className="rounded-lg object-cover shadow-sm flex-shrink-0"
+        />
+        <p className="text-sm text-slate-500 italic leading-relaxed pt-2">
+          Running a psycholinguistic experiment in the Zaidel EEG Lab at UCLA, where behavioral
+          and neurophysiological measures of linguistic empathy were developed and tested.
+        </p>
+      </div>
 
       <div className="prose">
         <p>
