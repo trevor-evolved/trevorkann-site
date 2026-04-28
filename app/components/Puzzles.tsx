@@ -57,6 +57,7 @@ function Crossword() {
   );
   const gridRef = useRef(grid);
   useEffect(() => { gridRef.current = grid; }, [grid]);
+  const mountedRef = useRef(false);
 
   const isBlack = (r: number, c: number) => SOLUTION[r]?.[c] === null;
 
@@ -64,8 +65,9 @@ function Crossword() {
   const activeAcrossIdx = isBlack(focus.r, focus.c) ? -1 : ACROSS.findIndex(cl => cl.row === focus.r);
   const activeDownIdx   = isBlack(focus.r, focus.c) ? -1 : DOWN.findIndex(cl => cl.col === focus.c);
 
-  // Scroll active clue into view
+  // Scroll active clue into view — skip on initial mount to avoid page jumping
   useEffect(() => {
+    if (!mountedRef.current) { mountedRef.current = true; return; }
     const idx = dir === "across" ? activeAcrossIdx : activeDownIdx;
     const dirIdx = dir === "across" ? 0 : 1;
     clueRefs.current[dirIdx][idx]?.scrollIntoView({ block: "nearest", behavior: "smooth" });
