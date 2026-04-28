@@ -11,14 +11,10 @@ export const MORPH_WORDS = [
 ];
 
 export const NOW_ITEMS = [
-  "Writing EER's 2025 Annual Decarbonization Perspective",
-  'Drafting the first "Language and Power" essay',
-  'Designing a crossword on grid-forming inverters',
-  'Teaching a workshop on EMI for Brazilian professors',
-  'Reading Ostler on linguistic empire',
-  'Co-authoring a state-level clean-firm brief',
-  'Editing RIO model documentation',
-  'Tuning the intro lecture for new EER staff',
+  'Finalizing the first series for the "Language and Power" blog',
+  'Drafting a paper on incorporating EMI in Brazil',
+  'Managing the publication Staying Current for Evolved Energy Research',
+  'Designing an energy themed crossword',
 ];
 
 export const TIMELINE = [
