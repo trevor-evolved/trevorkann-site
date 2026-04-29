@@ -124,7 +124,7 @@ export const TESTIMONIALS = [
 
 export const ETYM_WORDS = [
   { w: 'power',      ipa: '/ˈpaʊ.ər/',        roots: 'O.Fr. poeir, from L. potere — to be able',
-    both: ['In grammar: a construction that expresses ability (*can*, *may*).', 'In energy: the rate at which work is done — measured in watts.', 'In both: a claim about what is possible.'] },
+    both: ['Language: who holds authority in speech — whose words carry weight, who defines terms.', 'Energy: the rate at which work is done, measured in watts.', 'Both ask the same question: what is this agent able to cause?'] },
   { w: 'current',    ipa: '/ˈkʌr.ənt/',        roots: 'L. currere — to run',
     both: ['Linguistic: "current usage" — what runs in speech now.', 'Electrical: flow of charge running through a conductor.', 'Both descend from the image of something running past.'] },
   { w: 'charge',     ipa: '/tʃɑːrdʒ/',          roots: 'L. carricare — to load a cart',
@@ -138,7 +138,7 @@ export const ETYM_WORDS = [
   { w: 'translation',ipa: '/trænsˈleɪ.ʃən/',    roots: 'L. trans + latus — carried across',
     both: ['Language: carrying meaning across from one tongue to another.', 'Energy: losses incurred when moving power across distance.', 'Both are about what survives the crossing.'] },
   { w: 'code',       ipa: '/koʊd/',             roots: 'L. codex — wooden tablet, book',
-    both: ['Code-switching in bilinguals.', 'Grid-code compliance for inverters.', 'Both are systems of symbols governing behavior.'] },
+    both: ['Language: code-switching — bilinguals shift between languages and registers mid-conversation.', 'Energy: computational code governs how models and grid systems behave.', 'Both are rule systems — and someone always writes the rules.'] },
   { w: 'voice',      ipa: '/vɔɪs/',             roots: 'L. vox — voice, word',
     both: ['Active / passive voice — who does what.', 'A utility "voice" — how a company is heard in policy.', 'Both grammar and rhetoric ask who the agent is.'] },
   { w: 'frame',      ipa: '/freɪm/',            roots: 'O.E. framian — to be helpful',

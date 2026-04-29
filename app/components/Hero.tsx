@@ -146,9 +146,9 @@ export function Hero() {
         </div>
         <div className="hero-strip">
           <div><div className="n">20+</div><div className="l">Yrs teaching</div></div>
-          <div><div className="n">650+</div><div className="l">Students</div></div>
+          <div><div className="n">1000+</div><div className="l">Students</div></div>
           <div><div className="n">4</div><div className="l">Continents</div></div>
-          <div><div className="n">9</div><div className="l">Languages (3 that stuck)</div></div>
+          <div><div className="n">too many</div><div className="l">Student papers graded</div></div>
         </div>
       </div>
     </header>

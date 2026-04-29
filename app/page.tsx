@@ -29,7 +29,7 @@ export default function Home() {
       <NowStrip />
       <About />
       <Timeline />
-      <Teaching />
+      <Teaching preview />
       <Intersection />
       <Blog />
       <Puzzles />

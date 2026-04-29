@@ -2,6 +2,8 @@
 import { useState, useMemo } from "react";
 import { CONCEPT_NODES, CONCEPT_EDGES, CAPTIONS, ETYM_WORDS } from "../data";
 
+const FEATURED_ETYM = ["translation", "power", "current", "capacity", "code"];
+
 function ConceptMap() {
   const [focus, setFocus] = useState<string | null>(null);
   const [hover, setHover] = useState<string | null>(null);
@@ -145,7 +147,7 @@ export function Intersection() {
             </span>
           </div>
           <div className="etym-grid">
-            {ETYM_WORDS.map((w) => <EtymCard key={w.w} word={w} />)}
+            {ETYM_WORDS.filter((w) => FEATURED_ETYM.includes(w.w)).map((w) => <EtymCard key={w.w} word={w} />)}
           </div>
         </div>
       </div>

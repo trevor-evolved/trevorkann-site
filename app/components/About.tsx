@@ -4,7 +4,7 @@ export function About() {
   return (
     <section className="section" id="about">
       <div className="container">
-        <div className="section-head">
+        <div className="section-head" style={{ marginBottom: "32px" }}>
           <div>
             <div className="section-num">01 / About</div>
             <h2 className="section-title">A linguist who kept <em>translating</em>.</h2>
@@ -52,14 +52,14 @@ export function About() {
           <div className="about-copy">
             <h3>I&apos;m Trevor — a teacher who ended up in energy.</h3>
             <p>
-              I trained at UCLA (PhD, Applied Linguistics) studying linguistic
-              empathy — the way grammar encodes perspective-taking, and what it
-              reveals about how two minds coordinate meaning. I lectured there
-              for three years, then moved to Brazil as a U.S. Department of
+              I trained at UCLA (PhD, Applied Linguistics) studying empathy in
+              language: how grammar encodes perspective-taking and how speakers
+              position themselves relative to what&apos;s being said. I lectured
+              there for ten years, then moved to Brazil as a U.S. Department of
               State English Language Fellow and Visiting Professor at the
-              University of São Paulo, where I taught linguistics, ran
-              English-as-a-Medium-of-Instruction workshops, and tried to
-              pronounce <em>pamonha</em> correctly.
+              University of São Paulo, where I taught linguistics, established
+              an English-as-a-Medium-of-Instruction program, and practiced my
+              pronunciation of <em>paralelepípedo</em>.
             </p>
             <p>
               In 2024 I joined{" "}
@@ -73,15 +73,14 @@ export function About() {
             </p>
             <p>
               Turns out applied linguistics is good training for this. Both
-              fields are about who controls the frame, what counts as a valid
-              answer, and how meaning moves — or gets lost — across the gap
+              fields are about how meaning moves — or gets lost — across the gap
               between expert and audience. If you can teach a Brazilian engineer
-              to lecture in English, you can teach a lobbyist what capacity
-              expansion actually means.
+              to lecture in English, you can teach a lobbyist what the
+              difference between energy and power actually is (hint: total
+              amount vs. usage speed).
             </p>
             <div className="pullquote">
               Language is infrastructure.
-              <span className="attr">— From a draft of &ldquo;Language and Power&rdquo;</span>
             </div>
             <div className="chips">
               <span className="chip solid">Applied Linguistics PhD</span>
