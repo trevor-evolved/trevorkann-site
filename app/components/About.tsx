@@ -6,7 +6,7 @@ export function About() {
       <div className="container">
         <div className="section-head" style={{ marginBottom: "32px" }}>
           <div>
-            <div className="section-num">01 / About</div>
+            <div className="section-num">About</div>
             <h2 className="section-title">A linguist who kept <em>translating</em>.</h2>
           </div>
           <div className="section-kicker">

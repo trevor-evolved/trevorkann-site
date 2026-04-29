@@ -28,14 +28,8 @@ export default function Home() {
       <Hero />
       <NowStrip />
       <About />
-      <Timeline />
-      <Teaching preview />
       <Intersection />
       <Blog />
-      <Puzzles />
-      <Viz />
-      <WordArt />
-      <Publications />
       <Contact />
     </>
   );

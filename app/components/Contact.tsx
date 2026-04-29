@@ -4,7 +4,7 @@ export function Contact() {
       <div className="container">
         <div className="contact">
           <div>
-            <div className="section-num" style={{ color: "var(--teal-light)" }}>10 / Contact</div>
+            <div className="section-num" style={{ color: "var(--teal-light)" }}>Contact</div>
             <h3>Let&apos;s <em>talk</em>.</h3>
             <p style={{ color: "rgba(255,255,255,.72)", fontSize: 18, maxWidth: 440, marginTop: 20, lineHeight: 1.55 }}>
               Email is best — I&apos;m friendly and reasonably prompt. Open to

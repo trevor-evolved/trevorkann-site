@@ -21,7 +21,7 @@ export function Timeline() {
       <div className="container">
         <div className="section-head">
           <div>
-            <div className="section-num">02 / Work</div>
+            <div className="section-num">Work</div>
             <h2 className="section-title">Twenty years. Four <em>continents</em>.</h2>
           </div>
           <div className="section-kicker">

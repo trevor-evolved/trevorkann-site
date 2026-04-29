@@ -127,7 +127,7 @@ export function Intersection() {
       <div className="container">
         <div className="section-head">
           <div>
-            <div className="section-num">04 / Intersection</div>
+            <div className="section-num">Intersection</div>
             <h2 className="section-title">Language <em>↔</em> Energy.</h2>
           </div>
           <div className="section-kicker">

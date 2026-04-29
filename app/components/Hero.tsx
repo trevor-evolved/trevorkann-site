@@ -1,5 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { MORPH_WORDS, NOW_ITEMS } from "../data";
 
 function ParticleField() {
@@ -85,31 +87,37 @@ function Morph() {
   );
 }
 
-export function Nav() {
-  const [scrolled, setScrolled] = useState(false);
+export function Nav({ lightBg = false }: { lightBg?: boolean }) {
+  const [scrolled, setScrolled] = useState(lightBg);
+  const pathname = usePathname();
+  const home = pathname === "/";
+  const a = (anchor: string) => home ? anchor : `/${anchor}`;
+
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
+    const onScroll = () => setScrolled(lightBg || window.scrollY > 40);
+    onScroll();
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [lightBg]);
+
   const cls = `nav ${scrolled ? "scrolled" : "on-dark"}`;
   return (
     <nav className={cls}>
       <div className="nav-inner">
-        <a href="#top" className="brand">
+        <a href="/" className="brand">
           <span className="brand-mark">TK</span>
           <span>Trevor Kann</span>
         </a>
         <div className="nav-links">
-          <a href="#about">About</a>
-          <a href="#work">Work</a>
-          <a href="#teaching">Teaching</a>
-          <a href="#intersection">Intersection</a>
-          <a href="#blog">Blog</a>
-          <a href="#puzzles">Puzzles</a>
-          <a href="#publications">Research</a>
+          <a href={a("#about")}>About</a>
+          <a href={a("#intersection")}>Intersection</a>
+          <a href={a("#blog")}>Blog</a>
+          <a href="/about">Work & Teaching <span className="nav-arrow">↗</span></a>
+          <a href="/research">Research <span className="nav-arrow">↗</span></a>
+          <a href="/puzzles">Puzzles <span className="nav-arrow">↗</span></a>
+          <a href={a("#contact")}>Contact</a>
         </div>
-        <a href="#contact" className="nav-cta">Get in touch</a>
+        <a href={a("#contact")} className="nav-cta">Get in touch</a>
       </div>
     </nav>
   );

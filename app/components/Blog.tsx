@@ -26,7 +26,7 @@ export function Blog() {
       <div className="container">
         <div className="section-head">
           <div>
-            <div className="section-num">05 / Blog</div>
+            <div className="section-num">Blog</div>
             <h2 className="section-title">Language and <em>Power</em>.</h2>
           </div>
           <div className="section-kicker">

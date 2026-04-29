@@ -23,7 +23,7 @@ export function Teaching({ preview = false }: { preview?: boolean }) {
       <div className="container">
         <div className="section-head">
           <div>
-            <div className="section-num">03 / Teaching</div>
+            <div className="section-num">Teaching</div>
             <h2 className="section-title">Courses I&apos;ve <em>run</em>.</h2>
           </div>
           <div className="section-kicker">

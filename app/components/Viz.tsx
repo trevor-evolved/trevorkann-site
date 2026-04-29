@@ -82,14 +82,13 @@ export function Viz() {
       <div className="container">
         <div className="section-head">
           <div>
-            <div className="section-num">07 / Research, visualized</div>
+            <div className="section-num">Research</div>
             <h2 className="section-title">Language &amp; <em>empathy</em>.</h2>
           </div>
           <div className="section-kicker">
             My research is driven by a desire to empower language learners to
             express themselves authentically. My fatal flaw comprises
-            understanding and the need to be understood - just ask the people
-            I&apos;ve dated.
+            understanding and the need to be understood (my partner, who has infinite patience, can confirm).
           </div>
         </div>
 

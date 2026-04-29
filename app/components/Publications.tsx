@@ -4,7 +4,7 @@ export function Publications() {
       <div className="container">
         <div className="section-head">
           <div>
-            <div className="section-num">08 / Publications</div>
+            <div className="section-num">Publications</div>
             <h2 className="section-title">Selected <em>writing</em>.</h2>
           </div>
           <div className="section-kicker">
