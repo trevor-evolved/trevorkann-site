@@ -37,7 +37,7 @@ export function About() {
             </div>
             <div className="polaroid p5">
               <img src="/assets/photo-classroom.jpg" alt="classroom selfie at USP" />
-              <div className="cap">Topics in Applied Ling · USP</div>
+              <div className="cap">Topics in AppLing · USP</div>
             </div>
             <div className="polaroid p6">
               <img src="/assets/photo-usp-2.jpg" alt="class at USP" />

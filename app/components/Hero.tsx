@@ -89,6 +89,7 @@ function Morph() {
 
 export function Nav({ lightBg = false }: { lightBg?: boolean }) {
   const [scrolled, setScrolled] = useState(lightBg);
+  const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
   const home = pathname === "/";
   const a = (anchor: string) => home ? anchor : `/${anchor}`;
@@ -99,6 +100,8 @@ export function Nav({ lightBg = false }: { lightBg?: boolean }) {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, [lightBg]);
+
+  const close = () => setMenuOpen(false);
 
   const cls = `nav ${scrolled ? "scrolled" : "on-dark"}`;
   return (
@@ -115,10 +118,27 @@ export function Nav({ lightBg = false }: { lightBg?: boolean }) {
           <a href="/about">Work & Teaching <span className="nav-arrow">↗</span></a>
           <a href="/research">Research <span className="nav-arrow">↗</span></a>
           <a href="/puzzles">Puzzles <span className="nav-arrow">↗</span></a>
-          <a href={a("#contact")}>Contact</a>
         </div>
         <a href={a("#contact")} className="nav-cta">Get in touch</a>
+        <button
+          className="nav-hamburger"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          onClick={() => setMenuOpen(o => !o)}
+        >
+          <span /><span /><span />
+        </button>
       </div>
+      {menuOpen && (
+        <div className="nav-mobile-menu">
+          <a href={a("#about")}        onClick={close}>About</a>
+          <a href={a("#intersection")} onClick={close}>Intersection</a>
+          <a href={a("#blog")}         onClick={close}>Blog</a>
+          <a href="/about"             onClick={close}>Work & Teaching <span className="nav-arrow">↗</span></a>
+          <a href="/research"          onClick={close}>Research <span className="nav-arrow">↗</span></a>
+          <a href="/puzzles"           onClick={close}>Puzzles <span className="nav-arrow">↗</span></a>
+          <a href={a("#contact")}      onClick={close} className="nav-mobile-cta">Get in touch</a>
+        </div>
+      )}
     </nav>
   );
 }
