@@ -2,7 +2,7 @@
 import { useState, useMemo } from "react";
 import { CONCEPT_NODES, CONCEPT_EDGES, CAPTIONS, ETYM_WORDS } from "../data";
 
-const FEATURED_ETYM = ["translation", "power", "current", "capacity", "code"];
+const FEATURED_ETYM = ["transition", "power", "current", "capacity", "code"];
 
 function ConceptMap() {
   const [focus, setFocus] = useState<string | null>(null);

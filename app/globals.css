@@ -876,7 +876,7 @@ section { scroll-margin-top: 80px; }
   color: rgba(255,255,255,.55);
 }
 .cm-legend .sw { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; }
-.cm-legend .sw.l { background: var(--teal-light); }
+.cm-legend .sw.l { background: #8CCF5F; }
 .cm-legend .sw.e { background: var(--gold); }
 .cm-legend .sw.b { background: #fff; }
 
@@ -929,7 +929,7 @@ section { scroll-margin-top: 80px; }
 
 .etym-card {
   perspective: 1200px;
-  height: 200px;
+  height: 260px;
   cursor: pointer;
 }
 .etym-inner {
@@ -967,13 +967,14 @@ section { scroll-margin-top: 80px; }
 }
 .etym-ipa {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 15px;
   color: #7A8C92;
   margin-top: 4px;
 }
 .etym-roots {
   font-family: var(--font-serif);
   font-style: italic;
+  font-size: 15px;
   font-size: 14px;
   color: #3A4A4F;
   margin-top: auto;
