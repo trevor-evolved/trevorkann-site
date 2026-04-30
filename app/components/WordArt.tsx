@@ -209,7 +209,7 @@ export function WordArt() {
       <div className="container">
         <div className="section-head">
           <div>
-            <div className="section-num">Play</div>
+            <div className="section-num">Constellation</div>
             <h2 className="section-title">The <em>power</em> of words.</h2>
           </div>
           <div className="section-kicker">

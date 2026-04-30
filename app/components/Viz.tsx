@@ -87,8 +87,7 @@ export function Viz() {
           </div>
           <div className="section-kicker">
             My research is driven by a desire to empower language learners to
-            express themselves authentically. My fatal flaw comprises
-            understanding and the need to be understood (my partner, who has infinite patience, can confirm).
+            express themselves authentically. The need to understand others and to be understood is my fatal flaw (my partner, who has infinite patience, can confirm).
           </div>
         </div>
 

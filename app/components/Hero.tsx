@@ -115,9 +115,9 @@ export function Nav({ lightBg = false }: { lightBg?: boolean }) {
           <a href={a("#about")}>About</a>
           <a href={a("#intersection")}>Intersection</a>
           <a href={a("#blog")}>Blog</a>
-          <a href="/about">Work & Teaching <span className="nav-arrow">↗</span></a>
+          <a href="/about">Teaching <span className="nav-arrow">↗</span></a>
           <a href="/research">Research <span className="nav-arrow">↗</span></a>
-          <a href="/puzzles">Puzzles <span className="nav-arrow">↗</span></a>
+          <a href="/puzzles">Play <span className="nav-arrow">↗</span></a>
         </div>
         <a href={a("#contact")} className="nav-cta">Get in touch</a>
         <button
@@ -133,9 +133,9 @@ export function Nav({ lightBg = false }: { lightBg?: boolean }) {
           <a href={a("#about")}        onClick={close}>About</a>
           <a href={a("#intersection")} onClick={close}>Intersection</a>
           <a href={a("#blog")}         onClick={close}>Blog</a>
-          <a href="/about"             onClick={close}>Work & Teaching <span className="nav-arrow">↗</span></a>
+          <a href="/about"             onClick={close}>Teaching <span className="nav-arrow">↗</span></a>
           <a href="/research"          onClick={close}>Research <span className="nav-arrow">↗</span></a>
-          <a href="/puzzles"           onClick={close}>Puzzles <span className="nav-arrow">↗</span></a>
+          <a href="/puzzles"           onClick={close}>Play <span className="nav-arrow">↗</span></a>
           <a href={a("#contact")}      onClick={close} className="nav-mobile-cta">Get in touch</a>
         </div>
       )}

@@ -208,6 +208,7 @@ function Crossword() {
   return (
     <div className="cw-wrap" ref={wrapRef} onFocus={handleWrapFocus} onBlur={handleWrapBlur}>
       <div>
+        <div className="puzzle-card-title">Power to the People</div>
         <div
           className="cw-board"
           style={{
@@ -249,7 +250,7 @@ function Crossword() {
           )}
         </div>
         <div className="cw-meta">
-          <span>Mini · &ldquo;Staying Current&rdquo; · 5×5</span>
+          <span>5×5</span>
           <div className="pg"><div className="pg-fill" style={{ width: `${pct}%` }} /></div>
           <span>{done ? `✓ SOLVED · ${formatTime(elapsed)}` : timerStarted ? formatTime(elapsed) : `${correct}/${whiteCells}`}</span>
         </div>
@@ -500,7 +501,7 @@ export function CrosswordPlayer({ puzzle }: { puzzle: PuzzleData }) {
           )}
         </div>
         <div className="cw-meta">
-          <span>{puzzle.title} · {ROWS}×{COLS}</span>
+          <span>{ROWS}×{COLS}</span>
           <div className="pg"><div className="pg-fill" style={{ width: `${pct}%` }} /></div>
           <span>{done ? `✓ SOLVED · ${formatTime(elapsed)}` : timerStarted ? formatTime(elapsed) : `${correct}/${whiteCells}`}</span>
         </div>
