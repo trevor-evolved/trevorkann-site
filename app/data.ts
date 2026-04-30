@@ -185,18 +185,18 @@ export const CONCEPT_EDGES: [string, string][] = [
 ];
 
 export const CAPTIONS: Record<string, string> = {
-  power: '<b>Power</b> is the word where the two worlds literally rhyme. Grammatical power (modal verbs, stance) and electrical power (watts) both describe what an agent is able to cause.',
-  current: '<b>Current</b> — from Latin <i>currere</i>, to run. In discourse: what flows in speech right now. On a grid: what flows through a conductor.',
-  capacity: '<b>Capacity</b> is a container metaphor on both sides — cognitive capacity for a learner, nameplate capacity for a plant.',
+  power: '<b>Power</b> — Sociolinguistic power (dominance or influence asserted through language choices, accent, and style) and electrical power (rate of energy transfer) both describe what an agent is able to cause.',
+  current: '<b>Current</b> — in discourse, shared context {you, me, here, now} and what flows in speech right now. On a grid: what flows through a conductor.',
+  capacity: '<b>Capacity</b> — the uniquely human drive to engage with others through language. In energy, the installed potential available to meet demand.',
   translation: '<b>Translation</b> — <i>trans + latus</i>, carried across. Both fields obsess over what survives the crossing, and what\'s lost in it.',
   code: '<b>Code</b> governs behavior in both worlds: code-switching in bilinguals, grid-code compliance for inverters.',
   ling: 'The academic home: applied linguistics, sociolinguistics, psycholinguistics. 20 years of teaching and research.',
   energy: 'Planning the decarbonized system: modeling, policy, strategy. EER uses RIO and ENSEMBLE to co-optimize capacity expansion and scenario generation.',
-  empathy: 'Subject of my dissertation and a 2023 Neuropsychologia paper: behavioral + EEG measures of how grammar encodes perspective-taking.',
-  framing: 'How a problem is framed determines which solutions look reasonable. The same sentence — or the same megawatt-hour — means different things in different frames.',
-  register: '<b>Register</b> is how language dress-codes for the occasion — technical, colloquial, formal, accessible. Half of what I do at EER is register translation: turning model output into prose a policymaker can actually use.',
-  pragmatics: '<b>Pragmatics</b> is the study of meaning in use — what\'s implied, presupposed, left to inference. A net-zero scenario doesn\'t describe the future; it argues for one. That\'s pragmatics.',
-  model: '<b>RIO + ENSEMBLE</b> — EER\'s integrated capacity-expansion and scenario-generation models. The two words I translate most often for non-modelers.',
-  transition: 'The decarbonization transition is the project I wake up to.',
-  teaching: '500+ UCLA students, 150+ professors at USP, a couple dozen one-on-one mentees. The through-line of every job on this site.',
+  empathy: '<b>Empathy</b> — in language, perspective encoded in grammar and felt in conversation. In energy planning, understanding how different communities and stakeholders experience the energy transition.',
+  framing: '<b>Framing</b> — in discourse, the interpretive lens that allows individuals to interpret what a situation or conversation truly means. In energy, the frame around a project — capacity, emissions, cost, policy — influences stakeholder interpretation of an analysis within a complex system.',
+  register: '<b>Register</b> — in language, how speech shifts to fit its context: technical, formal, colloquial, urgent. In energy planning, navigating between the language of models, policy, and public engagement means operating in several registers at once.',
+  pragmatics: '<b>Pragmatics</b> — meaning in use: what\'s implied, presupposed, and left to inference. In energy, the same transition gets called \'grid modernization,\' \'climate action,\' or \'energy security\' depending on the room.',
+  model: '<b>Model</b> — in linguistics, large language models are statistical representations of language patterns trained on vast amounts of human text. In energy, RIO and ENSEMBLE model the system we\'re trying to build.',
+  transition: '<b>Transition</b> — in conversation analysis, the moment when one speaker yields the floor to another: precisely managed, cued by grammar and prosody. In energy, the shift to a decarbonized system is the defining infrastructure project of this century.',
+  teaching: '<b>Teaching</b> — in language education, meeting learners where they are and building from there. In energy, the same challenge: making complex systems legible to the people who need to act on them.',
 };
