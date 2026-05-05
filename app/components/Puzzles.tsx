@@ -558,7 +558,7 @@ export function Puzzles({ standalone = false }: { standalone?: boolean }) {
         <div className="section-head">
           <div>
             <div className="section-num">Puzzles</div>
-            <h2 className="section-title">A warm-up <em>mini</em>.</h2>
+            <h2 className="section-title">Solving the <em>grid</em>.</h2>
           </div>
           <div className="section-kicker">
             {standalone

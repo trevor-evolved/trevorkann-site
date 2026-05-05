@@ -4,11 +4,11 @@ import { useState, useEffect, useRef, useCallback } from "react";
 const PALETTE = ["#FFC000", "#6BA642", "#FFD852", "#8CCF5F", "#C94B22", "#2F5F2B"];
 
 type AnimPt = {
-  tx: number; ty: number; // letter-shape target
-  cx: number; cy: number; // current drawn position
-  vx: number; vy: number; // velocity (scatter phase)
+  tx: number; ty: number;
+  cx: number; cy: number;
+  vx: number; vy: number;
   c: string;
-  ph: number;             // phase offset for stable oscillation
+  ph: number;
 };
 
 function buildPts(canvas: HTMLCanvasElement, text: string): AnimPt[] {
@@ -16,7 +16,8 @@ function buildPts(canvas: HTMLCanvasElement, text: string): AnimPt[] {
   const off = document.createElement("canvas");
   off.width = w; off.height = h;
   const octx = off.getContext("2d")!;
-  const fs = Math.min(w * 0.18, 280);
+  const baseFs = Math.min(w * 0.18, 280);
+  const fs = baseFs * Math.min(1, 8 / Math.max(text.length, 8));
   octx.fillStyle = "white";
   octx.font = `800 ${fs}px Sora, sans-serif`;
   octx.textAlign = "center"; octx.textBaseline = "middle";
@@ -90,13 +91,11 @@ export function WordArt() {
     resize();
     window.addEventListener("resize", resize);
 
-    // Initialize pts at target positions
     ptsRef.current = buildPts(canvas, currentWordRef.current);
     ptsRef.current.forEach((p) => { p.cx = p.tx; p.cy = p.ty; });
 
     function frame() {
       const w = canvas!.clientWidth, h = canvas!.clientHeight;
-      // Semi-transparent fill creates the trail effect
       ctx.fillStyle = "rgba(6, 36, 43, 0.18)";
       ctx.fillRect(0, 0, w, h);
       tRef.current += 0.012;
@@ -113,7 +112,6 @@ export function WordArt() {
           p.cx += p.vx;
           p.cy += p.vy;
         } else {
-          // reform: ease toward target
           p.cx += (p.tx - p.cx) * 0.07;
           p.cy += (p.ty - p.cy) * 0.07;
         }
@@ -135,14 +133,13 @@ export function WordArt() {
   }, []);
 
   const handleInput = useCallback((val: string) => {
-    const word = val.slice(0, 16) || " ";
+    const word = val.slice(0, 40) || " ";
     setInputWord(word);
     currentWordRef.current = word;
     const canvas = canvasRef.current;
     if (!canvas) return;
     scatterActiveRef.current = false;
     const fresh = buildPts(canvas, word);
-    // Fly in from edges on manual word change too
     const w = canvas.clientWidth, h = canvas.clientHeight;
     fresh.forEach((p) => {
       const edge = Math.floor(Math.random() * 4);
@@ -164,7 +161,6 @@ export function WordArt() {
     const w = canvas.clientWidth, h = canvas.clientHeight;
     const cx = w / 2, cy = h / 2;
 
-    // Give each particle an outward velocity from center
     ptsRef.current.forEach((p) => {
       const dx = p.tx - cx || 1, dy = p.ty - cy || 1;
       const len = Math.sqrt(dx * dx + dy * dy);
@@ -174,19 +170,17 @@ export function WordArt() {
     });
     phaseRef.current = "scatter";
 
-    // Fetch related word and wait at least 700ms for the scatter
     const [newWord] = await Promise.all([
       fetchRelated(currentWordRef.current),
       new Promise<void>((res) => setTimeout(res, 700)),
     ]);
 
-    if (!scatterActiveRef.current) return; // cancelled by user typing
+    if (!scatterActiveRef.current) return;
 
     currentWordRef.current = newWord;
     setInputWord(newWord);
 
     const newPts = buildPts(canvas, newWord);
-    // Start new particles from random edge positions
     newPts.forEach((p) => {
       const edge = Math.floor(Math.random() * 4);
       if (edge === 0) { p.cx = Math.random() * w; p.cy = -20; }
@@ -218,7 +212,15 @@ export function WordArt() {
           </div>
         </div>
 
-        <div className="wordart-wrap">
+        <div
+          className="wordart-wrap"
+          onDragOver={(e) => e.preventDefault()}
+          onDrop={(e) => {
+            e.preventDefault();
+            const word = e.dataTransfer.getData("text/plain");
+            if (word) handleInput(word);
+          }}
+        >
           <div className="wordart-input">
             <input
               value={inputWord}
