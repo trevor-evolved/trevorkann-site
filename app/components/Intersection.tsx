@@ -25,6 +25,7 @@ function ConceptMap() {
   CONCEPT_NODES.forEach((n) => (nodesById[n.id] = n));
 
   return (
+    <>
     <div
       className="concept-map"
       onClick={(e) => {
@@ -83,15 +84,16 @@ function ConceptMap() {
         );
       })}
 
-      <div
-        className={`cm-caption ${active ? "visible" : ""}`}
-        dangerouslySetInnerHTML={{
-          __html: active
-            ? CAPTIONS[active] || "Hover or click another node to explore the map."
-            : "",
-        }}
-      />
     </div>
+    <div
+      className={`cm-caption ${active ? "visible" : ""}`}
+      dangerouslySetInnerHTML={{
+        __html: active
+          ? CAPTIONS[active] || "Tap a node to explore."
+          : "",
+      }}
+    />
+    </>
   );
 }
 
@@ -137,7 +139,9 @@ export function Intersection() {
           </div>
         </div>
 
+        <div className="cm-scroll">
         <ConceptMap />
+      </div>
 
         <div className="etym-wrap">
           <div className="etym-head">

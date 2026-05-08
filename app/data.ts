@@ -182,7 +182,7 @@ export const CONCEPT_EDGES: [string, string][] = [
   ['power','ling'],['power','energy'],['power','framing'],['power','grid'],
   ['current','discourse'],['current','grid'],['current','register'],['current','utility'],
   ['capacity','teaching'],['capacity','model'],['capacity','empathy'],['capacity','decarb'],
-  ['translation','ling'],['translation','register'],['translation','empathy'],
+  ['translation','ling'],['translation','register'],['translation','empathy'],['translation','transition'],['translation','energy'],
   ['code','framing'],['code','model'],['code','policy'],['code','pragmatics'],['code','register'],
   ['framing','policy'],['utility','policy'],['discourse','register'],
   ['framing','decarb'],['register','utility'],['pragmatics','policy'],['discourse','energy'],['framing','grid'],

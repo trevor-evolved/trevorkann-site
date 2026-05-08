@@ -379,6 +379,24 @@ section { scroll-margin-top: 80px; }
   .hero-strip { grid-template-columns: repeat(2, 1fr); row-gap: 24px; }
   .hero-lede { margin: 40px 0 36px; }
 }
+@media (max-width: 600px) {
+  .hero-morph-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    margin: 20px 0 6px;
+  }
+  .hero-morph-wrap .static {
+    font-size: 13px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+  }
+  .hero-morph {
+    min-width: 0 !important;
+    width: 100%;
+    font-size: 22px;
+  }
+}
 
 /* ---------------- NOW STRIP ---------------- */
 .now-strip {
@@ -815,6 +833,10 @@ section { scroll-margin-top: 80px; }
 
 /* ---------------- INTERSECTION ---------------- */
 .intersect-wrap { position: relative; }
+.cm-scroll {
+  width: 100%;
+  position: relative;
+}
 .concept-map {
   position: relative;
   width: 100%;
@@ -919,12 +941,29 @@ section { scroll-margin-top: 80px; }
 }
 @media (max-width: 1000px) { .etym-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 600px)  { .etym-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px)  { .etym-card { height: 320px; } }
+@media (max-width: 430px)  { .etym-grid { grid-template-columns: 1fr; } .etym-card { height: 260px; } }
 @media (max-width: 700px) {
   .cm-node { font-size: 9px; padding: 4px 7px; }
   .cm-node.bridge { font-size: 11px; padding: 6px 10px; }
   .cm-legend { display: none; }
-  .cm-caption { font-size: 12px; padding: 12px 14px; }
-  .concept-map { aspect-ratio: 4/3; }
+  .cm-caption {
+    position: static;
+    opacity: 0;
+    transform: none;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    margin-top: 0;
+    transition: max-height .3s ease, opacity .25s, padding .25s, margin-top .25s;
+  }
+  .cm-caption.visible {
+    opacity: 1;
+    max-height: 300px;
+    padding: 14px 16px;
+    margin-top: 10px;
+  }
+  .concept-map { aspect-ratio: 4/3; overflow: visible; }
 }
 
 .etym-card {
@@ -957,6 +996,8 @@ section { scroll-margin-top: 80px; }
   background: var(--ink);
   color: #fff;
   border-color: var(--ink);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .etym-word {
   font-family: var(--font-display);
@@ -1154,7 +1195,10 @@ section { scroll-margin-top: 80px; }
   gap: 48px;
   align-items: start;
 }
-@media (max-width: 900px) { .cw-wrap { grid-template-columns: 1fr; } }
+@media (max-width: 900px) {
+  .cw-wrap { grid-template-columns: 1fr; }
+  .cw-clues { max-height: 220px; overflow-y: auto; }
+}
 
 .cw-board {
   display: grid;
