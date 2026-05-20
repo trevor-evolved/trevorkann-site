@@ -24,11 +24,6 @@ export function Timeline() {
             <div className="section-num">Work</div>
             <h2 className="section-title">Twenty years. Four <em>continents</em>.</h2>
           </div>
-          <div className="section-kicker">
-            Seoul · Los Angeles · San Diego · São Paulo · Madrid. Click any era
-            to expand. The through-line, if I&apos;m honest, is always the same:
-            understanding communication and the seamless sharing of ideas.
-          </div>
         </div>
 
         <div className="timeline-wrap">

@@ -115,7 +115,7 @@ export function Nav({ lightBg = false }: { lightBg?: boolean }) {
           <a href={a("#about")}>About</a>
           <a href={a("#intersection")}>Intersection</a>
           <a href={a("#blog")}>Blog</a>
-          <a href="/about">Teaching <span className="nav-arrow">↗</span></a>
+          <a href="/teaching">Teaching <span className="nav-arrow">↗</span></a>
           <a href="/research">Research <span className="nav-arrow">↗</span></a>
           <a href="/puzzles">Play <span className="nav-arrow">↗</span></a>
         </div>
@@ -133,7 +133,7 @@ export function Nav({ lightBg = false }: { lightBg?: boolean }) {
           <a href={a("#about")}        onClick={close}>About</a>
           <a href={a("#intersection")} onClick={close}>Intersection</a>
           <a href={a("#blog")}         onClick={close}>Blog</a>
-          <a href="/about"             onClick={close}>Teaching <span className="nav-arrow">↗</span></a>
+          <a href="/teaching"             onClick={close}>Teaching <span className="nav-arrow">↗</span></a>
           <a href="/research"          onClick={close}>Research <span className="nav-arrow">↗</span></a>
           <a href="/puzzles"           onClick={close}>Play <span className="nav-arrow">↗</span></a>
           <a href={a("#contact")}      onClick={close} className="nav-mobile-cta">Get in touch</a>
@@ -170,7 +170,7 @@ export function Hero() {
         </p>
         <div className="hero-actions">
           <a href="#intersection" className="btn btn-primary">Language ↔ Energy</a>
-          <a href="#work" className="btn btn-ghost">The CV tour →</a>
+          <a href="/teaching" className="btn btn-ghost">The CV tour →</a>
         </div>
         <div className="hero-strip">
           <div><div className="n">20+</div><div className="l">Yrs teaching</div></div>

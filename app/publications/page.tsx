@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { Publications } from "../components/Publications";
+import { Contact } from "../components/Contact";
 
 export default function PublicationsPage() {
   return (
@@ -9,6 +10,7 @@ export default function PublicationsPage() {
         <Link href="/" className="puzzles-back">← Trevor Kann</Link>
       </div>
       <Publications />
+      <Contact />
     </>
   );
 }

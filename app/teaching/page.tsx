@@ -1,14 +1,16 @@
 "use client";
-import Link from "next/link";
+import { Nav } from "../components/Hero";
+import { Timeline } from "../components/Timeline";
 import { Teaching } from "../components/Teaching";
+import { Contact } from "../components/Contact";
 
-export default function TeachingPage() {
+export default function AboutPage() {
   return (
     <>
-      <div className="puzzles-page-nav">
-        <Link href="/" className="puzzles-back">← Trevor Kann</Link>
-      </div>
+      <Nav />
+      <Timeline />
       <Teaching />
+      <Contact />
     </>
   );
 }

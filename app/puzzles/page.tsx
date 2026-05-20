@@ -5,6 +5,7 @@ import { Nav } from "../components/Hero";
 import { Puzzles } from "../components/Puzzles";
 import { WordArt } from "../components/WordArt";
 import { WordFlower } from "../components/WordFlower";
+import { Contact } from "../components/Contact";
 import { PUZZLES } from "../data/puzzles";
 import { FLOWER_PUZZLES } from "../data/wordflower";
 
@@ -41,6 +42,7 @@ export default function PuzzlesPage() {
       </main>
       <WordFlower archive={FLOWER_PUZZLES} />
       <WordArt />
+      <Contact />
     </>
   );
 }

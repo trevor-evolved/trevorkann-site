@@ -69,21 +69,21 @@ export const TIMELINE = [
     ],
   },
   {
-    id: 'korea', year: '2006', role: 'English Instructor',
-    place: 'South Korea', current: false, badge: 'Early career',
-    bullets: [
-      'Tutored high school students in English language and academic skills.',
-      'Freelanced as an English instructor at a Korean university.',
-      'First professional teaching experience abroad — left to pursue graduate study at UCLA.',
-    ],
-  },
-  {
     id: 'smc', year: '2012 — 2013', role: 'Adjunct Professor',
     place: 'Santa Monica College · ESL', current: false, badge: 'Early career',
     bullets: [
       'Instructor in the Department of English as a Second Language.',
       'Designed syllabi, selected materials, wrote essay prompts and testing materials.',
       'Facilitated discussion, interaction, and presentations for 50+ students.',
+    ],
+  },
+  {
+    id: 'korea', year: '2006', role: 'English Instructor',
+    place: 'South Korea', current: false, badge: 'Early career',
+    bullets: [
+      'Tutored high school students in English language and academic skills.',
+      'Freelanced as an English instructor at a Korean university.',
+      'First professional teaching experience abroad — left to pursue graduate study at UCLA.',
     ],
   },
 ];

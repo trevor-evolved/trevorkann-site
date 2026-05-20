@@ -1,3 +1,9 @@
+function ObfuscatedEmail() {
+  const user = "lingua";
+  const domain = "gmail.com";
+  return <a href={`mailto:${user}@${domain}`}>{user}@{domain}</a>;
+}
+
 export function Contact() {
   return (
     <section className="section section-dark" id="contact" style={{ paddingBottom: 40 }}>
@@ -16,7 +22,7 @@ export function Contact() {
           <div className="contact-info">
             <div className="contact-row">
               <span className="k">Email</span>
-              <span className="v"><a href="mailto:trevor.kann@evolved.energy">trevor.kann@evolved.energy</a></span>
+              <span className="v"><ObfuscatedEmail /></span>
             </div>
             <div className="contact-row">
               <span className="k">Office</span>
@@ -31,14 +37,18 @@ export function Contact() {
               <span className="v"><a href="https://evolvedtk.substack.com/" target="_blank" rel="noreferrer">Language and Power</a> · Substack</span>
             </div>
             <div className="contact-row">
-              <span className="k">Puzzles</span>
-              <span className="v"><a href="#puzzles">Mini crosswords</a></span>
+              <span className="k">Research</span>
+              <span className="v"><a href="/research">Viz &amp; publications</a></span>
+            </div>
+            <div className="contact-row">
+              <span className="k">Play</span>
+              <span className="v"><a href="/puzzles">Mini crosswords</a></span>
             </div>
           </div>
         </div>
         <div className="footer">
           <span>© 2026 Trevor Kann</span>
-          <span>Sentence case. Teal ink. The grid as a metaphor.</span>
+          <span>&ldquo;You shall know a word by the company it keeps.&rdquo; — J.R. Firth</span>
         </div>
       </div>
     </section>
